@@ -86,7 +86,7 @@ def generate_food_data(num_orders=300, days=180):
         })
 
     df = pd.DataFrame(orders)
-    df.to_csv("data/raw/food_orders.csv", index=False)
+    df.to_csv("./data/raw/food_orders.csv", index=False)
     print(f"✅ Generated {num_orders} orders saved to data/raw/food_orders.csv")
     return df
 

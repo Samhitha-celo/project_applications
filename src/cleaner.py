@@ -23,7 +23,7 @@ def clean_data(filepath="data/raw/food_orders.csv"):
     # Remove negatives
     df = df[df['total_amount'] >= 0]
     
-    df.to_csv("data/processed/food_orders_clean.csv", index=False)
+    df.to_csv("./data/processed/food_orders_clean.csv", index=False)
     print("✅ Cleaned data saved!")
     return df
 
